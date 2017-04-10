@@ -1,0 +1,43 @@
+Message-ID: <9150d11970e0c7ceb80532e1fef62a41@localhost>
+Date: Fri, 03 Feb 2017 19:39:44 +0100
+Subject: basic - Login
+From: Admin <admin@website.com>
+To: sergio@mail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1486147184_eb89ffa272f5f9701995738a5be0604d_=_"
+
+
+--_=_swift_v4_1486147184_eb89ffa272f5f9701995738a5be0604d_=_
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+basic - Login
+
+http://localhost/yii2Basic/web/index.php?r=3Duser%2Flogin-callback&toke=
+n=3DeLcpZGXHivIG0631KVkdQYPaQcxD6SGV
+
+--_=_swift_v4_1486147184_eb89ffa272f5f9701995738a5be0604d_=_
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.=
+org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF=
+-8" />
+    <title></title>
+    </head>
+<body>
+
+<h3>basic - Login</h3>
+
+<p><a href=3D"http://localhost/yii2Basic/web/index.php?r=3Duser%2Flogin-c=
+allback&amp;token=3DeLcpZGXHivIG0631KVkdQYPaQcxD6SGV">http://localhost/yii=
+2Basic/web/index.php?r=3Duser%2Flogin-callback&token=3DeLcpZGXHivIG0631K=
+VkdQYPaQcxD6SGV</a></p></body>
+</html>
+
+
+--_=_swift_v4_1486147184_eb89ffa272f5f9701995738a5be0604d_=_--

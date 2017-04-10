@@ -1,0 +1,47 @@
+Message-ID: <910c915af8a4f2899661f099d551475b@localhost>
+Date: Fri, 03 Feb 2017 19:40:10 +0100
+Subject: basic - Email Confirmation
+From: Admin <admin@website.com>
+To: sergio@mail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1486147210_508bdee789ad759b5897ff40188b7b03_=_"
+
+
+--_=_swift_v4_1486147210_508bdee789ad759b5897ff40188b7b03_=_
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+basic - Email Confirmation
+
+Please confirm your email address by clicking the link below:
+
+http://localhost/yii2Basic/web/index.php?r=3Duser%2Fconfirm&token=3DxelTSP=
+PZkCy-9lcUwIbbeUczg-gELlT6
+
+--_=_swift_v4_1486147210_508bdee789ad759b5897ff40188b7b03_=_
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.=
+org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF=
+-8" />
+    <title></title>
+    </head>
+<body>
+
+<h3>basic - Email Confirmation</h3>
+
+<p>Please confirm your email address by clicking the link below:</p>
+
+<p><a href=3D"http://localhost/yii2Basic/web/index.php?r=3Duser%2Fconfirm=
+&amp;token=3DxelTSPPZkCy-9lcUwIbbeUczg-gELlT6">http://localhost/yii2Basic/=
+web/index.php?r=3Duser%2Fconfirm&token=3DxelTSPPZkCy-9lcUwIbbeUczg-gELlT=
+6</a></p></body>
+</html>
+
+
+--_=_swift_v4_1486147210_508bdee789ad759b5897ff40188b7b03_=_--
