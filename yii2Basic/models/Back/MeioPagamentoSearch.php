@@ -5,12 +5,12 @@ namespace app\models\Back;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Back\MeioPagamento;
+use app\models\Back\Meiopagamento;
 
 /**
- * MeioPagamentoSearch represents the model behind the search form about `app\models\Back\MeioPagamento`.
+ * MeiopagamentoSearch represents the model behind the search form about `app\models\Back\Meiopagamento`.
  */
-class MeioPagamentoSearch extends MeioPagamento
+class MeiopagamentoSearch extends Meiopagamento
 {
     /**
      * @inheritdoc
@@ -41,7 +41,7 @@ class MeioPagamentoSearch extends MeioPagamento
      */
     public function search($params)
     {
-        $query = MeioPagamento::find();
+        $query = Meiopagamento::find();
 
         // add conditions that should always apply here
 

@@ -3387,3 +3387,2259 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1490972463.614
     'REQUEST_TIME' => 1490972463
 ]
+2017-04-12 14:50:27 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente.
+' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#11 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(133): yii\db\ActiveQuery->one()
+#12 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(67): amnah\yii2\user\models\forms\LoginForm->getUser()
+#13 [internal function]: amnah\yii2\user\models\forms\LoginForm->validateUser('<span class="st...', '<span class="ke...')
+#14 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#15 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\InlineValidator->validateAttribute(Object(amnah\yii2\user\models\forms\LoginForm), '<span class="st...')
+#16 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(amnah\yii2\user\models\forms\LoginForm), '[<span class="s...')
+#17 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\controllers\DefaultController.php(83): yii\base\Model->validate()
+#18 [internal function]: amnah\yii2\user\controllers\DefaultController->actionLogin()
+#19 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#20 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#21 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#23 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#25 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente.
+' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#9 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(133): yii\db\ActiveQuery->one()
+#10 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(67): amnah\yii2\user\models\forms\LoginForm->getUser()
+#11 [internal function]: amnah\yii2\user\models\forms\LoginForm->validateUser('<span class="st...', '<span class="ke...')
+#12 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#13 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\InlineValidator->validateAttribute(Object(amnah\yii2\user\models\forms\LoginForm), '<span class="st...')
+#14 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(amnah\yii2\user\models\forms\LoginForm), '[<span class="s...')
+#15 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\controllers\DefaultController.php(83): yii\base\Model->validate()
+#16 [internal function]: amnah\yii2\user\controllers\DefaultController->actionLogin()
+#17 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#18 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#19 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#20 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#21 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2017-04-12 14:50:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/login'
+]
+
+$_POST = [
+    '_csrf' => 'd0dHTnhVQmEuIy0UEgRvOSUUEjggHhMPPAkABBQTJysELSwjIR4AFg=='
+    'LoginForm' => [
+        'email' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62840'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=user%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=user%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '179'
+    'HTTP_CONTENT_LENGTH' => '179'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=user%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492001424.7242
+    'REQUEST_TIME' => 1492001424
+]
+2017-04-12 14:50:29 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente.
+' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#11 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(133): yii\db\ActiveQuery->one()
+#12 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(67): amnah\yii2\user\models\forms\LoginForm->getUser()
+#13 [internal function]: amnah\yii2\user\models\forms\LoginForm->validateUser('<span class="st...', '<span class="ke...')
+#14 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#15 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\InlineValidator->validateAttribute(Object(amnah\yii2\user\models\forms\LoginForm), '<span class="st...')
+#16 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(amnah\yii2\user\models\forms\LoginForm), '[<span class="s...')
+#17 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\controllers\DefaultController.php(83): yii\base\Model->validate()
+#18 [internal function]: amnah\yii2\user\controllers\DefaultController->actionLogin()
+#19 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#20 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#21 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#22 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#23 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#25 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] Nenhuma ligação pôde ser feita porque o computador de destino
+as recusou ativamente.
+' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Schema.php(478): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Connection.php(759): yii\db\Schema->quoteValue('<span class="st...')
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#9 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(133): yii\db\ActiveQuery->one()
+#10 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\models\forms\LoginForm.php(67): amnah\yii2\user\models\forms\LoginForm->getUser()
+#11 [internal function]: amnah\yii2\user\models\forms\LoginForm->validateUser('<span class="st...', '<span class="ke...')
+#12 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\InlineValidator.php(69): call_user_func('[<span class="t...', '<span class="st...', '<span class="ke...')
+#13 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\InlineValidator->validateAttribute(Object(amnah\yii2\user\models\forms\LoginForm), '<span class="st...')
+#14 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(amnah\yii2\user\models\forms\LoginForm), '[<span class="s...')
+#15 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\controllers\DefaultController.php(83): yii\base\Model->validate()
+#16 [internal function]: amnah\yii2\user\controllers\DefaultController->actionLogin()
+#17 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#18 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#19 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#20 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#21 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#23 {main}
+Additional Information:
+
+2017-04-12 14:50:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/login'
+]
+
+$_POST = [
+    '_csrf' => 'd0dHTnhVQmEuIy0UEgRvOSUUEjggHhMPPAkABBQTJysELSwjIR4AFg=='
+    'LoginForm' => [
+        'email' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62843'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=user%2Flogin'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=user%2Flogin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '179'
+    'HTTP_CONTENT_LENGTH' => '179'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=user%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492001427.3271
+    'REQUEST_TIME' => 1492001427
+]
+2017-04-12 15:04:03 [::1][-][kg1kkhoh2rapri0roopigalib6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: yii\bootstrap\Nav::0' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\BaseYii.php(521): yii\base\Component->__set('0', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Object.php(105): yii\BaseYii::configure(Object(yii\bootstrap\Nav), Array)
+#2 [internal function]: yii\base\Object->__construct(Array)
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('yii\\bootstrap\\N...', Array, Array)
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\\bootstrap\\N...', Array, Array)
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Widget.php(101): yii\BaseYii::createObject(Array)
+#7 C:\xampp\htdocs\yii2Basic\views\layouts\main.php(63): yii\base\Widget::widget(Array)
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#10 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#11 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#12 C:\xampp\htdocs\yii2Basic\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#18 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2017-04-12 15:04:03 [::1][-][kg1kkhoh2rapri0roopigalib6][info][application] $_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'kg1kkhoh2rapri0roopigalib6'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63009'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=kg1kkhoh2rapri0roopigalib6'
+    'REQUEST_TIME_FLOAT' => 1492002243.808
+    'REQUEST_TIME' => 1492002243
+]
+2017-04-12 15:17:20 [::1][-][kg1kkhoh2rapri0roopigalib6][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'The 'label' option is required.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2-bootstrap\Nav.php:165
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2-bootstrap\Nav.php(147): yii\bootstrap\Nav->renderItem(Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2-bootstrap\Nav.php(134): yii\bootstrap\Nav->renderItems()
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Widget.php(102): yii\bootstrap\Nav->run()
+#3 C:\xampp\htdocs\yii2Basic\views\layouts\main.php(73): yii\base\Widget::widget(Array)
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#8 C:\xampp\htdocs\yii2Basic\controllers\SiteController.php(63): yii\base\Controller->render('index')
+#9 [internal function]: app\controllers\SiteController->actionIndex()
+#10 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#11 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#13 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('', Array)
+#14 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#15 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#16 {main}
+2017-04-12 15:17:20 [::1][-][kg1kkhoh2rapri0roopigalib6][info][application] $_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'kg1kkhoh2rapri0roopigalib6'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63173'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fcategoria%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=kg1kkhoh2rapri0roopigalib6'
+    'REQUEST_TIME_FLOAT' => 1492003040.0741
+    'REQUEST_TIME' => 1492003040
+]
+2017-04-12 15:20:45 [::1][-][kg1kkhoh2rapri0roopigalib6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:20:45 [::1][-][kg1kkhoh2rapri0roopigalib6][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'kg1kkhoh2rapri0roopigalib6'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63197'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=kg1kkhoh2rapri0roopigalib6'
+    'REQUEST_TIME_FLOAT' => 1492003245.3597
+    'REQUEST_TIME' => 1492003245
+]
+2017-04-12 15:21:02 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:21:02 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63223'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492003262.4471
+    'REQUEST_TIME' => 1492003262
+]
+2017-04-12 15:27:12 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:27:12 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63324'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=user%2Fprofile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492003632.9618
+    'REQUEST_TIME' => 1492003632
+]
+2017-04-12 15:27:17 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:27:17 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63350'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fcaixa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492003637.0707
+    'REQUEST_TIME' => 1492003637
+]
+2017-04-12 15:27:19 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/meioPagamento/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/meioPagame...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:27:19 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/meioPagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63358'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FmeioPagamento%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FmeioPagamento%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FtipoOperacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492003639.3092
+    'REQUEST_TIME' => 1492003639
+]
+2017-04-12 15:28:48 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(amnah\yii2\user\components\User))
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Component.php(540): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('forgot', Array)
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('user/forgot', Array)
+#9 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#11 {main}
+2017-04-12 15:28:48 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'user/forgot'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63431'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=user%2Fforgot'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=user%2Fforgot'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=user'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492003728.2977
+    'REQUEST_TIME' => 1492003728
+]
+2017-04-12 15:31:42 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:31:42 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63529'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=user%2Fadmin%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492003902.941
+    'REQUEST_TIME' => 1492003902
+]
+2017-04-12 15:33:52 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:33:52 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63567'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fcaixa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492004032.4882
+    'REQUEST_TIME' => 1492004032
+]
+2017-04-12 15:33:54 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/meioPagamento/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/meioPagame...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:33:54 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/meioPagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63575'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FmeioPagamento%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FmeioPagamento%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FtipoOperacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492004034.2847
+    'REQUEST_TIME' => 1492004034
+]
+2017-04-12 15:34:02 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:34:02 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63583'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FmeioPagamento%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492004042.8683
+    'REQUEST_TIME' => 1492004042
+]
+2017-04-12 15:34:10 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:34:10 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63600'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fmesa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492004050.5533
+    'REQUEST_TIME' => 1492004050
+]
+2017-04-12 15:35:30 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:35:30 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63618'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fmesa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492004130.6439
+    'REQUEST_TIME' => 1492004130
+]
+2017-04-12 15:35:33 [::1][2][q87l0kria43nvogapbpcbofqu6][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/meioPagamento/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/meioPagame...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-12 15:35:33 [::1][2][q87l0kria43nvogapbpcbofqu6][info][application] $_GET = [
+    'r' => 'Back/meioPagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw\";}'
+    'PHPSESSID' => 'q87l0kria43nvogapbpcbofqu6'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63626'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FmeioPagamento%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FmeioPagamento%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FtipoOperacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=631bb1af7f66a1d055e3513bfdc9c5d9e63400c8a34400e3bb9abfb70434140ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22YdjZjQ-XRSUvXKQnKNGJlFeJsjkmYKBw%22%3B%7D; PHPSESSID=q87l0kria43nvogapbpcbofqu6; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492004133.0556
+    'REQUEST_TIME' => 1492004133
+]
+2017-04-17 16:10:39 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:10:39 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51371'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=user%2Fadmin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438239.6378
+    'REQUEST_TIME' => 1492438239
+]
+2017-04-17 16:16:57 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:16:57 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51419'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fmesa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438617.0329
+    'REQUEST_TIME' => 1492438617
+]
+2017-04-17 16:17:04 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:17:04 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51428'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438624.6967
+    'REQUEST_TIME' => 1492438624
+]
+2017-04-17 16:17:06 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/meioPagamento/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/meioPagame...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:17:06 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/meioPagamento/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51436'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FmeioPagamento%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FmeioPagamento%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FtipoOperacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438626.6739
+    'REQUEST_TIME' => 1492438626
+]
+2017-04-17 16:20:16 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:20:16 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51507'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fcaixa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438816.2657
+    'REQUEST_TIME' => 1492438816
+]
+2017-04-17 16:20:17 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/meioPagamento/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/meioPagame...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:20:17 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/meioPagamento/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51515'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FmeioPagamento%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FmeioPagamento%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2FtipoOperacao%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438817.5341
+    'REQUEST_TIME' => 1492438817
+]
+2017-04-17 16:20:19 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:20:19 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51532'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fmesa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438819.0752
+    'REQUEST_TIME' => 1492438819
+]
+2017-04-17 16:21:56 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteempresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteemp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:21:56 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteempresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51549'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2Fclienteempresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2Fclienteempresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492438916.0573
+    'REQUEST_TIME' => 1492438916
+]
+2017-04-17 16:29:26 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/cliente-Empresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/cliente-Em...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:29:26 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/cliente-Empresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51631'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2Fcliente-Empresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2Fcliente-Empresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439366.6997
+    'REQUEST_TIME' => 1492439366
+]
+2017-04-17 16:29:44 [::1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: C:\xampp\htdocs\yii2Basic\views\Back/cliente-empresa\index.php' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\View.php:227
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\Back\ClienteEmpresaController))
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(app\controllers\Back\ClienteEmpresaController))
+#2 C:\xampp\htdocs\yii2Basic\controllers\Back\ClienteEmpresaController.php(44): yii\base\Controller->render('index', Array)
+#3 [internal function]: app\controllers\Back\ClienteEmpresaController->actionIndex()
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/cliente-em...', Array)
+#8 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2017-04-17 16:29:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'Back/cliente-empresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51647'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2Fcliente-empresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2Fcliente-empresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439384.7143
+    'REQUEST_TIME' => 1492439384
+]
+2017-04-17 16:30:15 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteempresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteemp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:30:15 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteempresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51661'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2Fclienteempresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2Fclienteempresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439415.3283
+    'REQUEST_TIME' => 1492439415
+]
+2017-04-17 16:37:19 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/\Back\familia\index' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('\\Back\\familia\\i...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/\\Back\\fami...', Array)
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:37:19 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'site/\\Back\\familia\\index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51748'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2F%5CBack%5Cfamilia%5Cindex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2F%5CBack%5Cfamilia%5Cindex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439839.4586
+    'REQUEST_TIME' => 1492439839
+]
+2017-04-17 16:37:53 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back\clienteempresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back\\clienteemp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:37:53 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back\\clienteempresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51785'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%5Cclienteempresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%5Cclienteempresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439873.111
+    'REQUEST_TIME' => 1492439873
+]
+2017-04-17 16:38:04 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/\Back\clienteempresa\index' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php:125
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('\\Back\\clienteem...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/\\Back\\clie...', Array)
+#2 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:38:04 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'site/\\Back\\clienteempresa\\index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51802'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=site%2F%5CBack%5Cclienteempresa%5Cindex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=site%2F%5CBack%5Cclienteempresa%5Cindex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439884.2788
+    'REQUEST_TIME' => 1492439884
+]
+2017-04-17 16:38:21 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:38:21 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51818'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439901.4587
+    'REQUEST_TIME' => 1492439901
+]
+2017-04-17 16:38:28 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back\clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back\\clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:38:28 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back\\clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51834'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%5CclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%5CclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492439908.326
+    'REQUEST_TIME' => 1492439908
+]
+2017-04-17 16:40:22 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/ClienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/ClienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:40:22 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/ClienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51855'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FClienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FClienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492440022.6197
+    'REQUEST_TIME' => 1492440022
+]
+2017-04-17 16:40:30 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:40:30 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51871'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492440030.6523
+    'REQUEST_TIME' => 1492440030
+]
+2017-04-17 16:47:23 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/tipoOperacao/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/tipoOperac...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:47:23 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/tipoOperacao/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51960'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FtipoOperacao%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FtipoOperacao%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fcaixa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492440443.8746
+    'REQUEST_TIME' => 1492440443
+]
+2017-04-17 16:49:38 [::1][2][q65sufcfeee6vsnsthrtqmnu30][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/clienteEmpresa/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/clienteEmp...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 16:49:38 [::1][2][q65sufcfeee6vsnsthrtqmnu30][info][application] $_GET = [
+    'r' => 'Back/clienteEmpresa/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'q65sufcfeee6vsnsthrtqmnu30'
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    '_identity' => '1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[2,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51982'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FclienteEmpresa%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FclienteEmpresa%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'PHPSESSID=q65sufcfeee6vsnsthrtqmnu30; _csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; _identity=1d16c856cd588ba077ed10e08008d55c14d0bd00e12453becfc4bfccc7e81b52a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B2%2Cnull%2C2592000%5D%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1492440578.0498
+    'REQUEST_TIME' => 1492440578
+]
+2017-04-17 17:05:07 [::1][-][qd2hfm2sl1i4s79m9mu9ubslo3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "Back/meioPagamento/index".' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('Back/meioPagame...', Array)
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2017-04-17 17:05:07 [::1][-][qd2hfm2sl1i4s79m9mu9ubslo3][info][application] $_GET = [
+    'r' => 'Back/meioPagamento/index'
+]
+
+$_COOKIE = [
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    'PHPSESSID' => 'qd2hfm2sl1i4s79m9mu9ubslo3'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52482'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=Back%2FmeioPagamento%2Findex'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=Back%2FmeioPagamento%2Findex'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; PHPSESSID=qd2hfm2sl1i4s79m9mu9ubslo3'
+    'REQUEST_TIME_FLOAT' => 1492441507.6995
+    'REQUEST_TIME' => 1492441507
+]
+2017-04-17 17:07:38 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Back\User' not found' in C:\xampp\htdocs\yii2Basic\models\Back\Clientempresa.php:38
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-04-17 17:07:38 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'eGhyWlE2d0MvDR0uOWNCLwwCFD44Rh0OAAUAHWFmGiAABzUjFVMhEA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Back\\Clientempresa'
+        'searchModelClass' => 'app\\models\\Back\\ClientempresaSearch'
+        'controllerClass' => 'app\\controllers\\Back\\ClientempresaController'
+        'viewPath' => '@app/views/Back/clientempresa'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    'PHPSESSID' => 'qd2hfm2sl1i4s79m9mu9ubslo3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52526'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '581'
+    'HTTP_CONTENT_LENGTH' => '581'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; PHPSESSID=qd2hfm2sl1i4s79m9mu9ubslo3'
+    'REQUEST_TIME_FLOAT' => 1492441658.2149
+    'REQUEST_TIME' => 1492441658
+]
+2017-04-17 17:09:35 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'amnah\yii2\user' not found' in C:\xampp\htdocs\yii2Basic\models\Back\Clientempresa.php:39
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-04-17 17:09:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf' => 'eGhyWlE2d0MvDR0uOWNCLwwCFD44Rh0OAAUAHWFmGiAABzUjFVMhEA=='
+    'Generator' => [
+        'modelClass' => 'app\\models\\Back\\Clientempresa'
+        'searchModelClass' => 'app\\models\\Back\\ClientempresaSearch'
+        'controllerClass' => 'app\\controllers\\Back\\ClientempresaController'
+        'viewPath' => '@app/views/Back/clientempresa'
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '0'
+        'enablePjax' => '0'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"WeothU5ltjfdipjMxmrG0PmcxoGyDeVS\";}'
+    'PHPSESSID' => 'qd2hfm2sl1i4s79m9mu9ubslo3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52529'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '581'
+    'HTTP_CONTENT_LENGTH' => '581'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=267daa210ce7721ad7bf5a469a0b3a2215b24b8af6dcdd500d4b862293393e89a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22WeothU5ltjfdipjMxmrG0PmcxoGyDeVS%22%3B%7D; PHPSESSID=qd2hfm2sl1i4s79m9mu9ubslo3'
+    'REQUEST_TIME_FLOAT' => 1492441775.1733
+    'REQUEST_TIME' => 1492441775
+]

@@ -4,11 +4,11 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Back\TipoOperacao */
+/* @var $model app\models\Back\Tipoperacao */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="tipo-operacao-form">
+<div class="tipoperacao-form">
 
     <?php $form = ActiveForm::begin(); ?>
 

@@ -10,7 +10,7 @@ use Yii;
  * @property integer $id
  * @property string $descricao
  */
-class TipoOperacao extends \yii\db\ActiveRecord
+class Tipoperacao extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

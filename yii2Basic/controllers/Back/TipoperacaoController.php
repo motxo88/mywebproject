@@ -3,16 +3,16 @@
 namespace app\controllers\Back;
 
 use Yii;
-use app\models\Back\TipoOperacao;
-use app\models\Back\TipoOperacaoSearch;
+use app\models\Back\Tipoperacao;
+use app\models\Back\TipoperacaoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * TipoOperacaoController implements the CRUD actions for TipoOperacao model.
+ * TipoperacaoController implements the CRUD actions for Tipoperacao model.
  */
-class TipoOperacaoController extends Controller
+class TipoperacaoController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class TipoOperacaoController extends Controller
     }
 
     /**
-     * Lists all TipoOperacao models.
+     * Lists all Tipoperacao models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new TipoOperacaoSearch();
+        $searchModel = new TipoperacaoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class TipoOperacaoController extends Controller
     }
 
     /**
-     * Displays a single TipoOperacao model.
+     * Displays a single Tipoperacao model.
      * @param integer $id
      * @return mixed
      */
@@ -57,13 +57,13 @@ class TipoOperacaoController extends Controller
     }
 
     /**
-     * Creates a new TipoOperacao model.
+     * Creates a new Tipoperacao model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new TipoOperacao();
+        $model = new Tipoperacao();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -75,7 +75,7 @@ class TipoOperacaoController extends Controller
     }
 
     /**
-     * Updates an existing TipoOperacao model.
+     * Updates an existing Tipoperacao model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +94,7 @@ class TipoOperacaoController extends Controller
     }
 
     /**
-     * Deletes an existing TipoOperacao model.
+     * Deletes an existing Tipoperacao model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class TipoOperacaoController extends Controller
     }
 
     /**
-     * Finds the TipoOperacao model based on its primary key value.
+     * Finds the Tipoperacao model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return TipoOperacao the loaded model
+     * @return Tipoperacao the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = TipoOperacao::findOne($id)) !== null) {
+        if (($model = Tipoperacao::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

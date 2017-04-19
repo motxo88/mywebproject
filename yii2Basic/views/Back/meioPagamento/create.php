@@ -4,13 +4,13 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Back\MeioPagamento */
+/* @var $model app\models\Back\Meiopagamento */
 
-$this->title = 'Create Meio Pagamento';
-$this->params['breadcrumbs'][] = ['label' => 'Meio Pagamentos', 'url' => ['index']];
+$this->title = 'Create Meiopagamento';
+$this->params['breadcrumbs'][] = ['label' => 'Meiopagamentos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="meio-pagamento-create">
+<div class="meiopagamento-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

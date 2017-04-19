@@ -3,16 +3,16 @@
 namespace app\controllers\Back;
 
 use Yii;
-use app\models\Back\MeioPagamento;
-use app\models\Back\MeioPagamentoSearch;
+use app\models\Back\Meiopagamento;
+use app\models\Back\MeiopagamentoSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * MeioPagamentoController implements the CRUD actions for MeioPagamento model.
+ * MeiopagamentoController implements the CRUD actions for Meiopagamento model.
  */
-class MeioPagamentoController extends Controller
+class MeiopagamentoController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class MeioPagamentoController extends Controller
     }
 
     /**
-     * Lists all MeioPagamento models.
+     * Lists all Meiopagamento models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new MeioPagamentoSearch();
+        $searchModel = new MeiopagamentoSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class MeioPagamentoController extends Controller
     }
 
     /**
-     * Displays a single MeioPagamento model.
+     * Displays a single Meiopagamento model.
      * @param integer $id
      * @return mixed
      */
@@ -57,13 +57,13 @@ class MeioPagamentoController extends Controller
     }
 
     /**
-     * Creates a new MeioPagamento model.
+     * Creates a new Meiopagamento model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new MeioPagamento();
+        $model = new Meiopagamento();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -75,7 +75,7 @@ class MeioPagamentoController extends Controller
     }
 
     /**
-     * Updates an existing MeioPagamento model.
+     * Updates an existing Meiopagamento model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +94,7 @@ class MeioPagamentoController extends Controller
     }
 
     /**
-     * Deletes an existing MeioPagamento model.
+     * Deletes an existing Meiopagamento model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class MeioPagamentoController extends Controller
     }
 
     /**
-     * Finds the MeioPagamento model based on its primary key value.
+     * Finds the Meiopagamento model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return MeioPagamento the loaded model
+     * @return Meiopagamento the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = MeioPagamento::findOne($id)) !== null) {
+        if (($model = Meiopagamento::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

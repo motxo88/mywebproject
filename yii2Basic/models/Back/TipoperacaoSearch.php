@@ -5,12 +5,12 @@ namespace app\models\Back;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Back\ClienteEmpresa;
+use app\models\Back\Tipoperacao;
 
 /**
- * ClienteEmpresaSearch represents the model behind the search form about `app\models\Back\ClienteEmpresa`.
+ * TipoperacaoSearch represents the model behind the search form about `app\models\Back\Tipoperacao`.
  */
-class ClienteEmpresaSearch extends ClienteEmpresa
+class TipoperacaoSearch extends Tipoperacao
 {
     /**
      * @inheritdoc
@@ -18,9 +18,8 @@ class ClienteEmpresaSearch extends ClienteEmpresa
     public function rules()
     {
         return [
-            [['id', 'user_id'], 'integer'],
-            [['morada'], 'safe'],
-            [['nif', 'conta_corrente'], 'number'],
+            [['id'], 'integer'],
+            [['descricao'], 'safe'],
         ];
     }
 
@@ -42,7 +41,7 @@ class ClienteEmpresaSearch extends ClienteEmpresa
      */
     public function search($params)
     {
-        $query = ClienteEmpresa::find();
+        $query = Tipoperacao::find();
 
         // add conditions that should always apply here
 
@@ -61,12 +60,9 @@ class ClienteEmpresaSearch extends ClienteEmpresa
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'nif' => $this->nif,
-            'conta_corrente' => $this->conta_corrente,
-            'user_id' => $this->user_id,
         ]);
 
-        $query->andFilterWhere(['like', 'morada', $this->morada]);
+        $query->andFilterWhere(['like', 'descricao', $this->descricao]);
 
         return $dataProvider;
     }

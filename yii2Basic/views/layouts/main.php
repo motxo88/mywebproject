@@ -8,7 +8,6 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\assets\AppAsset;
-use kartik\sidenav\SideNav;
 
 AppAsset::register($this);
 ?>
@@ -35,11 +34,45 @@ AppAsset::register($this);
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        
+        'options' => ['class' => 'navbar-nav navbar-right'],//Dropdown menus usando a class yii\bootstrap\Nav
+        
         'items' => [
-           ['label' => 'About', 'url' => ['/site/about']],
-           ['label' => 'Contact', 'url' => ['/site/contact']],
-            ['label' => 'User', 'url' => ['/user']],
+            [
+            'label' => 'Produtos',
+            'items' => [                        
+                ['label' => 'Familia', 'url' => ['/Back/familia/index']],
+                    '<li class="divider"></li>',
+                ['label' => 'Categoria', 'url' => ['/Back/categoria/index']],
+                    '<li class="divider"></li>',
+                ['label' => 'Artigo', 'url' => ['/Back/artigo/index']],
+                    '<li class="divider"></li>',
+                ['label' => 'IVA', 'url' => ['/Back/iva/index']],
+            ],
+        ],
+            [
+            'label' => 'Caixas',
+            'items' => [
+                ['label' => 'Caixa', 'url' => ['/Back/caixa/index']],
+                    '<li class="divider"></li>',                
+                ['label' => 'Tipo de Operação', 'url' => ['/Back/tipoperacao/index']],
+                    '<li class="divider"></li>',
+                ['label' => 'Meio Pagamento', 'url' => ['/Back/meiopagamento/index']],
+            ],
+        ],
+            ['label' => 'Mesa', 'url' => ['/Back/mesa/index']],
+            ['label' => 'Cliente Empresa', 'url' => ['/Back/clientempresa/index']],
+            ['label' => 'Gestão Utilizadores', 'url' => ['/user/admin']],
+            //['label' => 'User', 'url' => ['/user']], 
+            [
+             'label' => 'Área Pessoal',
+             'items' => [
+                ['label' => 'Perfil', 'url' => ['/user/profile']],
+                    '<li class="divider"></li>',
+                ['label' => 'Alterar Dados Pessoais', 'url' => ['/user/account']], 
+            ],
+        ],
+        
             Yii::$app->user->isGuest ? 
                 ['label' => 'Login', 'url' => ['/user/login']] : // or ['/user/login-email']
                 ['label' => 'Logout (' . Yii::$app->user->displayName . ')',

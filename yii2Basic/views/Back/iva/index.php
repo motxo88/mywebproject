@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\Back\IvaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Ivas';
+$this->title = 'Taxas de Iva';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="iva-index">
@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Iva', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Criar Iva', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

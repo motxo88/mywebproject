@@ -10,7 +10,7 @@ use Yii;
  * @property integer $id
  * @property string $descricao
  */
-class MeioPagamento extends \yii\db\ActiveRecord
+class Meiopagamento extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

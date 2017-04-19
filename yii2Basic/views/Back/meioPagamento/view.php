@@ -4,13 +4,13 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Back\MeioPagamento */
+/* @var $model app\models\Back\Meiopagamento */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Meio Pagamentos', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Meiopagamentos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="meio-pagamento-view">
+<div class="meiopagamento-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

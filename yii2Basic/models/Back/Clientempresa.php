@@ -3,7 +3,7 @@
 namespace app\models\Back;
 
 use Yii;
-use amnah\yii2\user\components\User;//linha adicionada para fazer o import da class user do modulo amnah para criar o CRUD
+use amnah\yii2\user\components\User;//import da class user do modulo amnah para criação do CRUD
 
 /**
  * This is the model class for table "cliente_empresa".
@@ -16,7 +16,7 @@ use amnah\yii2\user\components\User;//linha adicionada para fazer o import da cl
  *
  * @property User $user
  */
-class ClienteEmpresa extends \yii\db\ActiveRecord
+class Clientempresa extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc

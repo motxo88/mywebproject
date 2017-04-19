@@ -5,12 +5,12 @@ namespace app\models\Back;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\Back\TipoOperacao;
+use app\models\Back\Clientempresa;
 
 /**
- * TipoOperacaoSearch represents the model behind the search form about `app\models\Back\TipoOperacao`.
+ * ClientempresaSearch represents the model behind the search form about `app\models\Back\Clientempresa`.
  */
-class TipoOperacaoSearch extends TipoOperacao
+class ClientempresaSearch extends Clientempresa
 {
     /**
      * @inheritdoc
@@ -18,8 +18,9 @@ class TipoOperacaoSearch extends TipoOperacao
     public function rules()
     {
         return [
-            [['id'], 'integer'],
-            [['descricao'], 'safe'],
+            [['id', 'user_id'], 'integer'],
+            [['morada'], 'safe'],
+            [['nif', 'conta_corrente'], 'number'],
         ];
     }
 
@@ -41,7 +42,7 @@ class TipoOperacaoSearch extends TipoOperacao
      */
     public function search($params)
     {
-        $query = TipoOperacao::find();
+        $query = Clientempresa::find();
 
         // add conditions that should always apply here
 
@@ -60,9 +61,12 @@ class TipoOperacaoSearch extends TipoOperacao
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'nif' => $this->nif,
+            'conta_corrente' => $this->conta_corrente,
+            'user_id' => $this->user_id,
         ]);
 
-        $query->andFilterWhere(['like', 'descricao', $this->descricao]);
+        $query->andFilterWhere(['like', 'morada', $this->morada]);
 
         return $dataProvider;
     }

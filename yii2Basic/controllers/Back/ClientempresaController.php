@@ -3,16 +3,16 @@
 namespace app\controllers\Back;
 
 use Yii;
-use app\models\Back\ClienteEmpresa;
-use app\models\Back\ClienteEmpresaSearch;
+use app\models\Back\Clientempresa;
+use app\models\Back\ClientempresaSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ClienteEmpresaController implements the CRUD actions for ClienteEmpresa model.
+ * ClientempresaController implements the CRUD actions for Clientempresa model.
  */
-class ClienteEmpresaController extends Controller
+class ClientempresaController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class ClienteEmpresaController extends Controller
     }
 
     /**
-     * Lists all ClienteEmpresa models.
+     * Lists all Clientempresa models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new ClienteEmpresaSearch();
+        $searchModel = new ClientempresaSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class ClienteEmpresaController extends Controller
     }
 
     /**
-     * Displays a single ClienteEmpresa model.
+     * Displays a single Clientempresa model.
      * @param integer $id
      * @return mixed
      */
@@ -57,13 +57,13 @@ class ClienteEmpresaController extends Controller
     }
 
     /**
-     * Creates a new ClienteEmpresa model.
+     * Creates a new Clientempresa model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new ClienteEmpresa();
+        $model = new Clientempresa();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -75,7 +75,7 @@ class ClienteEmpresaController extends Controller
     }
 
     /**
-     * Updates an existing ClienteEmpresa model.
+     * Updates an existing Clientempresa model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -94,7 +94,7 @@ class ClienteEmpresaController extends Controller
     }
 
     /**
-     * Deletes an existing ClienteEmpresa model.
+     * Deletes an existing Clientempresa model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -107,15 +107,15 @@ class ClienteEmpresaController extends Controller
     }
 
     /**
-     * Finds the ClienteEmpresa model based on its primary key value.
+     * Finds the Clientempresa model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return ClienteEmpresa the loaded model
+     * @return Clientempresa the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ClienteEmpresa::findOne($id)) !== null) {
+        if (($model = Clientempresa::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

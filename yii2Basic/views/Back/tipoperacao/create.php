@@ -4,13 +4,13 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Back\TipoOperacao */
+/* @var $model app\models\Back\Tipoperacao */
 
-$this->title = 'Create Tipo Operacao';
-$this->params['breadcrumbs'][] = ['label' => 'Tipo Operacaos', 'url' => ['index']];
+$this->title = 'Create Tipoperacao';
+$this->params['breadcrumbs'][] = ['label' => 'Tipoperacaos', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="tipo-operacao-create">
+<div class="tipoperacao-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
