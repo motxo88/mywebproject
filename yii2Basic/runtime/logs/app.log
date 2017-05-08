@@ -5643,3 +5643,54 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1492441775.1733
     'REQUEST_TIME' => 1492441775
 ]
+2017-05-08 20:19:10 [::1][-][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\controllers\AdminController.php:35
+Stack trace:
+#0 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Object.php(107): amnah\yii2\user\controllers\AdminController->init()
+#1 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Controller.php(84): yii\base\Object->__construct(Array)
+#2 [internal function]: yii\base\Controller->__construct('admin', Object(amnah\yii2\user\Module), Array)
+#3 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\di\Container.php(373): ReflectionClass->newInstanceArgs(Array)
+#4 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('amnah\\yii2\\user...', Array, Array)
+#5 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\BaseYii.php(340): yii\di\Container->get('amnah\\yii2\\user...', Array)
+#6 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(569): yii\BaseYii::createObject('amnah\\yii2\\user...', Array)
+#7 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(522): yii\base\Module->createControllerByID('admin')
+#8 C:\xampp\htdocs\yii2Basic\vendor\amnah\yii2-user\Module.php(254): yii\base\Module->createController('admin')
+#9 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(514): amnah\yii2\user\Module->createController('admin')
+#10 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('user/admin')
+#11 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('user/admin', Array)
+#12 C:\xampp\htdocs\yii2Basic\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\yii2Basic\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2017-05-08 20:19:10 [::1][-][-][info][application] $_GET = [
+    'r' => 'user/admin'
+]
+
+$_COOKIE = [
+    '_csrf' => 'ec96c95683ae3e7ff0221358b0f9786e97e8b7730ba2f83545bb066061cb63c4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0sZ00HHwt9XVIEU-ajywiP_I7Gn6Kn12\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\yii2Basic\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62643'
+    'SERVER_SOFTWARE' => 'PHP 5.6.28 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/index.php?r=user%2Fadmin'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\yii2Basic\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'QUERY_STRING' => 'r=user%2Fadmin'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:8080/index.php?r=Back%2Fmesa%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-PT,pt;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=ec96c95683ae3e7ff0221358b0f9786e97e8b7730ba2f83545bb066061cb63c4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220sZ00HHwt9XVIEU-ajywiP_I7Gn6Kn12%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1494267550.129
+    'REQUEST_TIME' => 1494267550
+]

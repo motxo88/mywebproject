@@ -26,8 +26,7 @@ class Tipoperacao extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'descricao'], 'required'],
-            [['id'], 'integer'],
+            [['descricao'], 'required'],
             [['descricao'], 'string', 'max' => 45],
         ];
     }

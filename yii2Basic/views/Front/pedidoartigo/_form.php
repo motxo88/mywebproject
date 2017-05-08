@@ -4,15 +4,23 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Back\Tipoperacao */
+/* @var $model app\models\Front\Pedidoartigo */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="tipoperacao-form">
+<div class="pedidoartigo-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'descricao')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'id')->textInput() ?>
+
+    <?= $form->field($model, 'quantidade')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'valor')->textInput(['maxlength' => true]) ?>
+
+    <?= $form->field($model, 'artigo_id')->textInput() ?>
+
+    <?= $form->field($model, 'pedido_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

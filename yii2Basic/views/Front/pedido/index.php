@@ -4,19 +4,19 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\Back\TipoperacaoSearch */
+/* @var $searchModel app\models\Front\PedidoSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tipoperacaos';
+$this->title = 'Pedidos';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="tipoperacao-index">
+<div class="pedido-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Tipoperacao', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Pedido', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -25,7 +25,12 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-            'descricao',
+            'timestamp',
+            'valor_total',
+            'pago',
+            'user_id',
+            // 'mesa_id',
+            // 'cliente_empresa_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
